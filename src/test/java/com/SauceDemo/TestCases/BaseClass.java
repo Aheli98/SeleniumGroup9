@@ -38,19 +38,30 @@ public class BaseClass {
 	public static WebDriver driver;      //driver object
 	
 	
-	
+	@Parameters("browser")
 	@BeforeClass
-	public void setup()
+	public void setup(String br)
 	{
-		String driverName = readconfig.getBrowser();
-		if(driverName.equalsIgnoreCase("chrome"))
-		{
-			System.setProperty("webdriver.chrome.driver", ".\\Drivers\\chromedriver.exe");
-			//object instantiasation
-			driver = new ChromeDriver();
+		//logger = Logger.getLogger("SauceDemo");
+		//PropertyConfigurator.configure("log4j.properties");
 		
-			//logger = Logger.getLogger("SauceDemo");
-			//PropertyConfigurator.configure("log4j.properties");
+		
+		if(br.equals("Chrome"))
+			{
+			System.setProperty("webdriver.chrome.driver",readconfig.getChrome());
+			driver = new ChromeDriver();
+			}
+			
+		else if(br.equals("firefoxpath"))
+			{
+				System.setProperty("webdriver.gecko.driver",readconfig.getfirefoxpath());
+				driver = new FirefoxDriver();
+			}
+		
+		else if(br.equals("iepath"))
+		{
+			System.setProperty("webdriver.gecko.driver",readconfig.getiepath());
+			driver = new InternetExplorerDriver();
 		}
 		driver.get(BaseUrl);
 	}
