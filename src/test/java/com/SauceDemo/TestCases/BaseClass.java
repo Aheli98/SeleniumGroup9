@@ -9,6 +9,8 @@ import java.util.Calendar;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 //import org.apache.log4j.Logger;
@@ -41,13 +43,13 @@ public class BaseClass {
 	
 	public static WebDriver driver;      //driver object
 	
-	
+	public static Logger logger;
 	
 	@BeforeClass
 	public void setup()
 	{
-		//logger = Logger.getLogger("SauceDemo");
-		//PropertyConfigurator.configure("log4j.properties");
+		logger = Logger.getLogger("SauceDemo");
+		PropertyConfigurator.configure("Log4j.properties");
 		
 		
 		if(Browser.equalsIgnoreCase("Chrome"))

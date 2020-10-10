@@ -1,0 +1,145 @@
+2020-10-10 18:15:58,174 [main] INFO SauceDemo - URL is opened
+2020-10-10 18:16:53,622 [main] INFO SauceDemo - URL is opened
+2020-10-10 18:17:38,824 [main] INFO SauceDemo - URL is opened
+2020-10-10 18:17:39,711 [main] INFO SauceDemo - Entered username
+2020-10-10 18:17:39,796 [main] INFO SauceDemo - Entered password
+2020-10-10 18:17:41,001 [main] INFO SauceDemo - Login test passed
+2020-10-10 18:20:17,215 [main] INFO SauceDemo - user name provided
+2020-10-10 18:20:17,324 [main] INFO SauceDemo - password provided
+2020-10-10 18:20:21,039 [main] INFO SauceDemo - Login passed
+2020-10-10 18:20:22,228 [main] INFO SauceDemo - user name provided
+2020-10-10 18:20:22,294 [main] INFO SauceDemo - password provided
+2020-10-10 18:20:25,497 [main] INFO SauceDemo - Login passed
+2020-10-10 18:20:29,314 [main] INFO SauceDemo - user name provided
+2020-10-10 18:20:29,390 [main] INFO SauceDemo - password provided
+2020-10-10 18:20:32,486 [main] INFO SauceDemo - Login passed
+2020-10-10 18:20:36,510 [main] INFO SauceDemo - user name provided
+2020-10-10 18:20:36,573 [main] INFO SauceDemo - password provided
+2020-10-10 18:20:39,652 [main] INFO SauceDemo - Login passed
+2020-10-10 18:20:43,395 [main] INFO SauceDemo - user name provided
+2020-10-10 18:20:43,456 [main] INFO SauceDemo - password provided
+2020-10-10 18:20:51,739 [main] INFO SauceDemo - Login passed
+2020-10-10 18:28:13,720 [main] INFO SauceDemo - user name provided
+2020-10-10 18:28:13,960 [main] INFO SauceDemo - password provided
+2020-10-10 18:28:18,385 [main] INFO SauceDemo - Login passed
+2020-10-10 18:28:19,390 [main] INFO SauceDemo - user name provided
+2020-10-10 18:28:19,461 [main] INFO SauceDemo - password provided
+2020-10-10 18:28:22,522 [main] INFO SauceDemo - Login passed
+2020-10-10 18:28:26,256 [main] INFO SauceDemo - user name provided
+2020-10-10 18:28:26,321 [main] INFO SauceDemo - password provided
+2020-10-10 18:28:29,403 [main] INFO SauceDemo - Login passed
+2020-10-10 18:28:33,085 [main] INFO SauceDemo - user name provided
+2020-10-10 18:28:33,148 [main] INFO SauceDemo - password provided
+2020-10-10 18:28:36,248 [main] INFO SauceDemo - Login passed
+2020-10-10 18:28:39,926 [main] INFO SauceDemo - user name provided
+2020-10-10 18:28:39,985 [main] INFO SauceDemo - password provided
+2020-10-10 18:28:48,158 [main] INFO SauceDemo - Login passed
+2020-10-10 18:30:49,492 [main] INFO SauceDemo - user name provided
+2020-10-10 18:30:49,576 [main] INFO SauceDemo - password provided
+2020-10-10 18:30:53,424 [main] INFO SauceDemo - Login passed
+2020-10-10 18:30:54,455 [main] INFO SauceDemo - user name provided
+2020-10-10 18:30:54,526 [main] INFO SauceDemo - password provided
+2020-10-10 18:30:57,625 [main] INFO SauceDemo - Login passed
+2020-10-10 18:31:01,318 [main] INFO SauceDemo - user name provided
+2020-10-10 18:31:01,385 [main] INFO SauceDemo - password provided
+2020-10-10 18:31:04,446 [main] INFO SauceDemo - Login passed
+2020-10-10 18:31:08,198 [main] INFO SauceDemo - user name provided
+2020-10-10 18:31:08,261 [main] INFO SauceDemo - password provided
+2020-10-10 18:31:11,365 [main] INFO SauceDemo - Login passed
+2020-10-10 18:31:15,056 [main] INFO SauceDemo - user name provided
+2020-10-10 18:31:15,120 [main] INFO SauceDemo - password provided
+2020-10-10 18:31:23,306 [main] INFO SauceDemo - Login passed
+2020-10-10 18:38:58,517 [main] INFO SauceDemo - User name is provided
+2020-10-10 18:38:58,592 [main] INFO SauceDemo - Passsword is provided
+2020-10-10 18:38:59,592 [main] INFO SauceDemo - filtering product....
+2020-10-10 18:39:02,024 [main] INFO SauceDemo - Name and price of the first product are written in the Excel sheet successfully
+2020-10-10 18:43:19,477 [main] INFO SauceDemo - User name is provided
+2020-10-10 18:43:19,548 [main] INFO SauceDemo - Passsword is provided
+2020-10-10 18:43:21,024 [main] INFO SauceDemo - Product is filtered
+2020-10-10 18:43:22,124 [main] INFO SauceDemo - First product is selected
+2020-10-10 18:43:22,234 [main] INFO SauceDemo - Selected product is added to the cart
+2020-10-10 18:51:19,740 [main] INFO SauceDemo - User name is provided
+2020-10-10 18:51:20,154 [main] INFO SauceDemo - Password is provided
+2020-10-10 18:51:21,812 [main] INFO SauceDemo - Product is filtered
+2020-10-10 18:51:29,252 [main] INFO SauceDemo - First product is selected
+2020-10-10 18:51:29,420 [main] INFO SauceDemo - Selected product is added to the cart
+2020-10-10 18:51:29,769 [main] INFO SauceDemo - providing checkout details....
+2020-10-10 18:51:31,003 [main] INFO SauceDemo - validation started....
+2020-10-10 18:51:31,038 [main] INFO SauceDemo - test case passed....
+2020-10-10 18:54:02,086 [main] INFO SauceDemo - User name is provided
+2020-10-10 18:54:02,168 [main] INFO SauceDemo - Passsword is provided
+2020-10-10 18:54:03,165 [main] INFO SauceDemo - Product is filtered
+2020-10-10 18:54:04,284 [main] INFO SauceDemo - First product is selected
+2020-10-10 18:54:04,442 [main] INFO SauceDemo - Selected product is added to the cart
+2020-10-10 18:54:04,443 [main] INFO SauceDemo - test case passed....
+2020-10-10 19:02:52,155 [main] INFO SauceDemo - user name provided
+2020-10-10 19:02:52,233 [main] INFO SauceDemo - password provided
+2020-10-10 19:02:54,463 [main] INFO SauceDemo - user name provided
+2020-10-10 19:02:54,553 [main] INFO SauceDemo - password provided
+2020-10-10 19:02:55,289 [main] INFO SauceDemo - user name provided
+2020-10-10 19:02:55,360 [main] INFO SauceDemo - password provided
+2020-10-10 19:02:56,092 [main] INFO SauceDemo - user name provided
+2020-10-10 19:02:56,156 [main] INFO SauceDemo - password provided
+2020-10-10 19:02:56,847 [main] INFO SauceDemo - user name provided
+2020-10-10 19:02:56,927 [main] INFO SauceDemo - password provided
+2020-10-10 19:21:13,484 [main] INFO SauceDemo - user name provided
+2020-10-10 19:21:13,706 [main] INFO SauceDemo - password provided
+2020-10-10 19:21:19,624 [main] INFO SauceDemo - user name provided
+2020-10-10 19:21:19,687 [main] INFO SauceDemo - password provided
+2020-10-10 19:21:20,915 [main] INFO SauceDemo - user name provided
+2020-10-10 19:21:20,982 [main] INFO SauceDemo - password provided
+2020-10-10 19:21:21,683 [main] INFO SauceDemo - user name provided
+2020-10-10 19:21:21,753 [main] INFO SauceDemo - password provided
+2020-10-10 19:21:22,509 [main] INFO SauceDemo - user name provided
+2020-10-10 19:21:22,578 [main] INFO SauceDemo - password provided
+2020-10-10 19:22:44,187 [main] INFO SauceDemo - user name provided
+2020-10-10 19:22:44,289 [main] INFO SauceDemo - password provided
+2020-10-10 19:22:49,124 [main] INFO SauceDemo - user name provided
+2020-10-10 19:22:49,190 [main] INFO SauceDemo - password provided
+2020-10-10 19:22:49,281 [main] WARN SauceDemo - Login failed
+2020-10-10 19:22:50,114 [main] INFO SauceDemo - user name provided
+2020-10-10 19:22:50,185 [main] INFO SauceDemo - password provided
+2020-10-10 19:22:50,272 [main] WARN SauceDemo - Login failed
+2020-10-10 19:22:50,899 [main] INFO SauceDemo - user name provided
+2020-10-10 19:22:50,966 [main] INFO SauceDemo - password provided
+2020-10-10 19:22:51,043 [main] WARN SauceDemo - Login failed
+2020-10-10 19:22:51,693 [main] INFO SauceDemo - user name provided
+2020-10-10 19:22:51,760 [main] INFO SauceDemo - password provided
+2020-10-10 19:24:36,755 [main] INFO SauceDemo - user name provided
+2020-10-10 19:24:36,889 [main] INFO SauceDemo - password provided
+2020-10-10 19:24:40,860 [main] INFO SauceDemo - user name provided
+2020-10-10 19:24:40,932 [main] INFO SauceDemo - password provided
+2020-10-10 19:24:41,029 [main] WARN SauceDemo - Login failed
+2020-10-10 19:24:41,740 [main] INFO SauceDemo - user name provided
+2020-10-10 19:24:41,813 [main] INFO SauceDemo - password provided
+2020-10-10 19:24:41,890 [main] WARN SauceDemo - Login failed
+2020-10-10 19:24:42,562 [main] INFO SauceDemo - user name provided
+2020-10-10 19:24:42,628 [main] INFO SauceDemo - password provided
+2020-10-10 19:24:42,701 [main] WARN SauceDemo - Login failed
+2020-10-10 19:24:43,409 [main] INFO SauceDemo - user name provided
+2020-10-10 19:24:43,475 [main] INFO SauceDemo - password provided
+2020-10-10 19:25:33,329 [main] INFO SauceDemo - user name provided
+2020-10-10 19:25:33,406 [main] INFO SauceDemo - password provided
+2020-10-10 19:25:38,192 [main] INFO SauceDemo - user name provided
+2020-10-10 19:25:38,267 [main] INFO SauceDemo - password provided
+2020-10-10 19:25:38,355 [main] WARN SauceDemo - Login failed
+2020-10-10 19:25:39,073 [main] INFO SauceDemo - user name provided
+2020-10-10 19:25:39,139 [main] INFO SauceDemo - password provided
+2020-10-10 19:25:39,211 [main] WARN SauceDemo - Login failed
+2020-10-10 19:25:40,070 [main] INFO SauceDemo - user name provided
+2020-10-10 19:25:40,139 [main] INFO SauceDemo - password provided
+2020-10-10 19:25:40,209 [main] WARN SauceDemo - Login failed
+2020-10-10 19:25:40,980 [main] INFO SauceDemo - user name provided
+2020-10-10 19:25:41,051 [main] INFO SauceDemo - password provided
+2020-10-10 19:32:56,538 [main] INFO SauceDemo - user name provided
+2020-10-10 19:32:56,715 [main] INFO SauceDemo - password provided
+2020-10-10 19:32:57,829 [main] WARN SauceDemo - Login failed
+2020-10-10 19:32:58,909 [main] INFO SauceDemo - user name provided
+2020-10-10 19:32:58,977 [main] INFO SauceDemo - password provided
+2020-10-10 19:33:02,941 [main] INFO SauceDemo - user name provided
+2020-10-10 19:33:03,007 [main] INFO SauceDemo - password provided
+2020-10-10 19:33:06,801 [main] INFO SauceDemo - user name provided
+2020-10-10 19:33:06,870 [main] INFO SauceDemo - password provided
+2020-10-10 19:33:10,653 [main] INFO SauceDemo - user name provided
+2020-10-10 19:33:10,732 [main] INFO SauceDemo - password provided
+2020-10-10 19:33:15,953 [main] WARN SauceDemo - Login failed

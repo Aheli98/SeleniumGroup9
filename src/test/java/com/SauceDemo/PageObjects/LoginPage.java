@@ -19,7 +19,7 @@ public class LoginPage {
 	By UserName = By.xpath("//input[@id='user-name']");
 	By Password = By.xpath("//input[@id='password']");
 	By LoginButton =By.xpath("//input[@id='login-button']");
-	By Error = By.xpath("//*[text()='Epic sadface: Username and password do not match any user in this service']");
+	By Error = By.xpath("//*[@id=\"login_button_container\"]/div/form/h3");
 	By Menu = By.xpath("//button[text()='Open Menu']");
 	By LogoutButton = By.xpath("//*[@id=\"logout_sidebar_link\"]");
 	
@@ -50,11 +50,11 @@ public class LoginPage {
 		driver.findElement(LoginButton).click();
 	}
 
-	public String CaptureError()
+	/*public String CaptureError()
 	{
-		String ab = driver.findElement(Error).getText();
-		return ab;
-	}
+		return driver.findElement(Error).getText();
+		
+	}*/
 	
 	public void OpenMenu()
 	{

@@ -48,6 +48,7 @@ public class FilterProduct {
 	
         ExcelWrite.ProductName((driver.findElement(FirstProduct).getText()));
         ExcelWrite.ProductPrice((driver.findElement(FirstProductPrice).getText()));
+        
 	}
 
 }

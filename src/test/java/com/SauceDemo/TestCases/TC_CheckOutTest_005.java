@@ -18,9 +18,9 @@ public class TC_CheckOutTest_005 extends BaseClass{
 	{
 		driver.manage().window().maximize();
 		
-		driver.manage().timeouts().implicitlyWait(3000, TimeUnit.MILLISECONDS);
 		
 		LoginPage lp = new LoginPage(driver);
+		driver.manage().timeouts().implicitlyWait(3000, TimeUnit.MILLISECONDS);
 		
 		lp.OpenMenu();
 		
@@ -28,22 +28,32 @@ public class TC_CheckOutTest_005 extends BaseClass{
 		driver.manage().timeouts().implicitlyWait(3000, TimeUnit.MILLISECONDS);
 
 		lp.setUserName(UserName);
+		logger.info("User name is provided");
+
 		lp.setPassword(Password);
+		logger.info("Password is provided");
+
 		lp.ClickOnLoginButton();
 		
 		
 		FilterProduct fp = new FilterProduct(driver);
 		fp.FilteringProduct();
-		
+		logger.info("Product is filtered");
+
 		fp.SelectFirstProduct();
-		
+		logger.info("First product is selected");
+
 		AddToCart atc = new AddToCart(driver);
 		atc.ClickOnAddtocartButton();
 		atc.ClickOnCartIcon();
-		
+		logger.info("Selected product is added to the cart");
+
 		
 		CheckOut chk = new CheckOut(driver);
 		chk.ClickOnCheckOutBox();
+		
+		logger.info("providing checkout details....");
+		
 		
 		chk.setFirstName(FirstName);
 		
@@ -64,10 +74,14 @@ public class TC_CheckOutTest_005 extends BaseClass{
 		
 		chk.ClickOnFinishButton();
 		
+		logger.info("validation started....");
+
 		
 		String head = chk.getHeader();
 		Assert.assertEquals(head, "THANK YOU FOR YOUR ORDER");
 		
+		logger.info("test case passed....");
+
 	}
 	
 
