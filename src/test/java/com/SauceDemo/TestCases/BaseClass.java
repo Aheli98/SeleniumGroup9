@@ -1,38 +1,44 @@
 package com.SauceDemo.TestCases;
 
-import org.testng.annotations.AfterClass;
-
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
-import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Logger;
-import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 //import org.apache.log4j.Logger;
 //import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-//import org.openqa.selenium.firefox.FirefoxDriver;
-//import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.ITestResult;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
 
 import com.SauceDemo.Utilities.ConfigPropertiesRead;
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 
+import com.SauceDemo.Utilities.DateUtil;
 
 
 
 
 public class BaseClass {
 	
+	public static ExtentReports extent;
+	public static ExtentHtmlReporter htmlReporter;
+	public static ExtentTest logger;
+	
+	
 	ConfigPropertiesRead readconfig = new ConfigPropertiesRead();
-	public String Browser = readconfig.getBrowser();
 	public String BaseUrl = readconfig.getURL();
 	public String UserName = readconfig.getName();
 	public String Password = readconfig.getPass();
@@ -43,32 +49,37 @@ public class BaseClass {
 	
 	public static WebDriver driver;      //driver object
 	
-	public static Logger logger;
+	@BeforeTest
+	public void startTest()
+	{   
+		String reportName = DateUtil.getTimeStamp() + ".html";
+		htmlReporter = new ExtentHtmlReporter(System.getProperty("user.dir")+"/test-output/"+ reportName );
+		extent = new ExtentReports();
+		extent.attachReporter(htmlReporter);
+//		htmlReporter.config().setDocumentTitle("SauceDemo Fetch Results");
+		htmlReporter.config().setReportName("SauceDemo Test Report");
+	}
+	
+	@AfterTest
+	public void EndTest()
+	{
+		extent.flush();
+	}
+	
 	
 	@BeforeClass
 	public void setup()
 	{
-		logger = Logger.getLogger("SauceDemo");
-		PropertyConfigurator.configure("Log4j.properties");
-		
-		
-		if(Browser.equalsIgnoreCase("Chrome"))
-			{
-			System.setProperty("webdriver.chrome.driver",".\\Drivers\\chromedriver.exe");
-			driver = new ChromeDriver();
-			}
-			
-		/*else if(br.equals("firefoxpath"))
-			{
-				System.setProperty("webdriver.gecko.driver",".\\Drivers\\geckodriver.exe";
-				driver = new FirefoxDriver();
-			}
-		
-		else if(br.equals("iepath"))
+		String driverName = readconfig.getBrowser();
+		if(driverName.equalsIgnoreCase("chrome"))
 		{
-			System.setProperty("webdriver.gecko.driver",".\\Driver\\chromedriver.exe");
-			driver = new InternetExplorerDriver();
-		}*/
+			System.setProperty("webdriver.chrome.driver", ".\\Drivers\\chromedriver1.exe");
+			//object instantiation
+			driver = new ChromeDriver();
+		
+			//logger = Logger.getLogger("SauceDemo");
+			//PropertyConfigurator.configure("log4j.properties");
+		}
 		driver.get(BaseUrl);
 	}
 	
@@ -83,6 +94,15 @@ public class BaseClass {
 	{
 		driver.quit();
 	}
+//	@Test
+//	public void test()
+//	{
+//		System.out.println("jhcb");
+//		
+//		logger.log(Status.INFO, "Check");
+//		
+//	}
+//	
 	
 	public static void takesScreenShot(WebDriver driver, ITestResult result) {
 

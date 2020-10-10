@@ -6,45 +6,54 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.SauceDemo.PageObjects.LoginPage;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
 
 
 
 public class TC_LoginTest_001 extends BaseClass{
 	
+
 	@Test
 	public void LoginTest() throws InterruptedException
 	{
-		
+		logger = extent.createTest("Login Check");
 		driver.manage().window().maximize();
 
 		
-		logger.info("URL is opened");
+		
 		
 		//create object of LoginPage with driver parameter
 		LoginPage lp = new LoginPage(driver);
+		logger.log(Status.INFO, "Clicked navMenu");
 		driver.manage().timeouts().implicitlyWait(3000, TimeUnit.MILLISECONDS);
-
+	
 		lp.OpenMenu();
+	
 		lp.ClickOnLogoutButton();
-		driver.manage().timeouts().implicitlyWait(3000, TimeUnit.MILLISECONDS);
-
+		logger.log(Status.INFO, "Clicked on Logout");
 		lp.setUserName(UserName);
-		logger.info("Entered username");
+		logger.log(Status.INFO, "UserName entered");
+		
 
 		lp.setPassword(Password);
-		logger.info("Entered password");
+		logger.log(Status.INFO, "Password entered");
 		
 		lp.ClickOnLoginButton();
+		logger.log(Status.INFO, "Clicked On login button");
+		
 		
 		if(driver.getTitle().equals("Swag Labs"))
 		{
 			Assert.assertTrue(true);
-			logger.info("Login test passed");
+			logger.log(Status.PASS, "Passed");
+			
 		}
 		else
 		{
+			logger.log(Status.FAIL, "FAILED");
 			Assert.assertTrue(false);
-			logger.info("Login test failed");
+			
 		}
 	}
 	

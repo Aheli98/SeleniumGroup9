@@ -2,53 +2,65 @@ package com.SauceDemo.TestCases;
 
 import java.util.concurrent.TimeUnit;
 
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import com.SauceDemo.PageObjects.AddToCart;
 import com.SauceDemo.PageObjects.FilterProduct;
 import com.SauceDemo.PageObjects.LoginPage;
+import com.SauceDemo.Utilities.DateUtil;
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 
 public class TC_AddToCartTest_004 extends BaseClass {
+	
+	
 	
 	@Test
 	public void Addingtocart() throws InterruptedException
 	{    
+		logger = extent.createTest("Add to Cart");
 		driver.manage().window().maximize();
 		LoginPage lp = new LoginPage(driver);
+		FilterProduct fp = new FilterProduct(driver);
+		AddToCart atc = new AddToCart(driver);
 		
 		driver.manage().timeouts().implicitlyWait(3000, TimeUnit.MILLISECONDS);
 		
 		lp.OpenMenu();
+		logger.log(Status.INFO, "Clicked navMenu");
 	
 		lp.ClickOnLogoutButton();
-		driver.manage().timeouts().implicitlyWait(3000, TimeUnit.MILLISECONDS);
-
+		logger.log(Status.INFO, "Clicked on Logout");	
 		lp.setUserName(UserName);
-		logger.info("User name is provided");
-
-		lp.setPassword(Password);
-		logger.info("Passsword is provided");
-
-		lp.ClickOnLoginButton();
-	
-		FilterProduct fp = new FilterProduct(driver);
-
+		logger.log(Status.INFO, "UserName entered");
 		
+		lp.setPassword(Password);
+		logger.log(Status.INFO, "Password entered");
+		
+		lp.ClickOnLoginButton();
+		logger.log(Status.INFO, "Clicked On login button");
+	
 		fp.FilteringProduct();
-		logger.info("Product is filtered");
+		logger.log(Status.INFO, "filtered");
 
 		fp.SelectFirstProduct();
-		logger.info("First product is selected");
-
 		
-		AddToCart atc = new AddToCart(driver);
-
+		
 		atc.ClickOnAddtocartButton();
 		atc.ClickOnCartIcon();
-		logger.info("Selected product is added to the cart");
-		logger.info("test case passed....");
-
+		logger.log(Status.PASS, "Added to Cart");
+	
 		
 	}
+	@AfterTest
+	public void EndTest()
+	{
+		extent.flush();
+	}
+	
 
 }

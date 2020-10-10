@@ -1,57 +1,61 @@
 package com.SauceDemo.TestCases;
 
-import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
-import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
-import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.SauceDemo.PageObjects.LoginPage;
 import com.SauceDemo.Utilities.XLUtils;
+import com.aventstack.extentreports.Status;
 
 public class TC_LoginDDT_002 extends BaseClass{
 	
 	@Test(dataProvider="LoginData")
 	public void loginDDT(String user, String pwd) throws InterruptedException
 	{
+		driver.manage().window().maximize();
+		logger = extent.createTest("Login Check");
 		driver.get(BaseUrl);
 		LoginPage lp = new LoginPage(driver);
 		driver.manage().timeouts().implicitlyWait(3000, TimeUnit.MILLISECONDS);
 		
 	
 		lp.OpenMenu();
+		logger.log(Status.INFO, "Clicked navMenu");
 		
 		lp.ClickOnLogoutButton();
-		driver.manage().timeouts().implicitlyWait(3000, TimeUnit.MILLISECONDS);
-
+		logger.log(Status.INFO, "Clicked on Logout");
+		
 		lp.setUserName(user);
-		logger.info("user name provided");
+		logger.log(Status.INFO, "UserName entered");
+
 		lp.setPassword(pwd);
-		logger.info("password provided");
+		logger.log(Status.INFO, "Password entered");
+
 		lp.ClickOnLoginButton();
+		logger.log(Status.INFO, "Clicked On login button");
+
 	
 		
-		
-		
-
-		if(isErrorPresent()==true)
+		if(isErrorPresent()== true)
 		{
-			Assert.assertTrue(false);
+			logger.log(Status.FAIL, "Wrong Credentials");
+			//Assert.assertTrue(false);
 			
-			logger.warn("Login failed");
+
+			
+	//lp.ClearUserName();
+			//lp.ClearPassword();
 		}
-		if(isErrorPresent()==false)
+		else
 		{
 			Assert.assertTrue(true);
-			logger.info("Login passed");
 			lp.OpenMenu();
 			lp.ClickOnLogoutButton();
+			logger.log(Status.PASS, "Login Successfully");
 		}
 	}
 	
@@ -62,9 +66,9 @@ public class TC_LoginDDT_002 extends BaseClass{
 		try
 		{
 			String ab = lp.CaptureError();
-			Assert.assertEquals(ab, "Epic sadface: ");
-		return true;
+			Assert.assertEquals(ab, "Epic sadface: Username and password do not match any user in this service");
 			
+			return true;
 		}
 		catch(Exception e)
 		{
