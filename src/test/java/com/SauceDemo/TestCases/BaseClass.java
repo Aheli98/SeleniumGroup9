@@ -1,5 +1,7 @@
 package com.SauceDemo.TestCases;
 
+import org.testng.annotations.AfterClass;
+
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
@@ -13,10 +15,10 @@ import org.openqa.selenium.TakesScreenshot;
 //import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+//import org.openqa.selenium.firefox.FirefoxDriver;
+//import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.ITestResult;
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 
 import com.SauceDemo.Utilities.ConfigPropertiesRead;
@@ -24,9 +26,11 @@ import com.SauceDemo.Utilities.ConfigPropertiesRead;
 
 
 
+
 public class BaseClass {
 	
 	ConfigPropertiesRead readconfig = new ConfigPropertiesRead();
+	public String Browser = readconfig.getBrowser();
 	public String BaseUrl = readconfig.getURL();
 	public String UserName = readconfig.getName();
 	public String Password = readconfig.getPass();
@@ -42,16 +46,27 @@ public class BaseClass {
 	@BeforeClass
 	public void setup()
 	{
-		String driverName = readconfig.getBrowser();
-		if(driverName.equalsIgnoreCase("chrome"))
-		{
-			System.setProperty("webdriver.chrome.driver", ".\\Drivers\\chromedriver.exe");
-			//object instantiasation
-			driver = new ChromeDriver();
+		//logger = Logger.getLogger("SauceDemo");
+		//PropertyConfigurator.configure("log4j.properties");
 		
-			//logger = Logger.getLogger("SauceDemo");
-			//PropertyConfigurator.configure("log4j.properties");
-		}
+		
+		if(Browser.equalsIgnoreCase("Chrome"))
+			{
+			System.setProperty("webdriver.chrome.driver",".\\Drivers\\chromedriver.exe");
+			driver = new ChromeDriver();
+			}
+			
+		/*else if(br.equals("firefoxpath"))
+			{
+				System.setProperty("webdriver.gecko.driver",".\\Drivers\\geckodriver.exe";
+				driver = new FirefoxDriver();
+			}
+		
+		else if(br.equals("iepath"))
+		{
+			System.setProperty("webdriver.gecko.driver",".\\Driver\\chromedriver.exe");
+			driver = new InternetExplorerDriver();
+		}*/
 		driver.get(BaseUrl);
 	}
 	

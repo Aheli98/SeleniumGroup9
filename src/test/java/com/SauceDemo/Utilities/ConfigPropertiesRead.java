@@ -32,9 +32,24 @@ public class ConfigPropertiesRead {
 	
 	public String getBrowser()
 	{
-		String Browser= prop.getProperty("Browser");
+		String Browser=prop.getProperty("Browser");
 		return Browser;
 	}
+	/*public String getChrome()
+	{
+		String chromepath= prop.getProperty("chromepath");
+		return chromepath;
+	}
+	public String getiepath()
+	{
+		String iepath= prop.getProperty("iepath");
+		return iepath;
+	}
+	public String getfirefoxpath()
+	{
+		String firefoxpath= prop.getProperty("firefoxpath");
+		return firefoxpath;
+	}*/
 	
 	public String getURL()
 	{

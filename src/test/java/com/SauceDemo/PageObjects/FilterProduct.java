@@ -1,5 +1,7 @@
 package com.SauceDemo.PageObjects;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -29,7 +31,8 @@ public class FilterProduct {
 	public void FilteringProduct() throws InterruptedException
 	{
 		driver.findElement(FilterList).click();
-		Thread.sleep(3000);
+		driver.manage().timeouts().implicitlyWait(3000, TimeUnit.MILLISECONDS);
+
 		Select listbox = new Select(driver.findElement(FilterLowToHigh));
 		listbox.selectByValue("lohi");
 	}
@@ -37,7 +40,8 @@ public class FilterProduct {
 	public void SelectFirstProduct() throws InterruptedException
 	{
 		driver.findElement(FirstProduct).click();
-		Thread.sleep(5000);
+		driver.manage().timeouts().implicitlyWait(5000, TimeUnit.MILLISECONDS);
+
 		
 		JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("window.scrollBy(0,2000)", "");
