@@ -19,11 +19,8 @@ public class TC_LoginTest_001 extends BaseClass{
 		
 		//create object of LoginPage with driver parameter
 		LoginPage lp = new LoginPage(driver);
-		Thread.sleep(3000);
 		lp.OpenMenu();
-		Thread.sleep(3000);
 		lp.ClickOnLogoutButton();
-		Thread.sleep(3000);
 		lp.setUserName(UserName);
 		
 
@@ -31,7 +28,6 @@ public class TC_LoginTest_001 extends BaseClass{
 		
 		
 		lp.ClickOnLoginButton();
-		Thread.sleep(3000);
 		
 		if(driver.getTitle().equals("Swag Labs"))
 		{

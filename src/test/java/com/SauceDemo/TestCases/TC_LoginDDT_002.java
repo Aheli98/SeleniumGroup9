@@ -1,6 +1,7 @@
 package com.SauceDemo.TestCases;
 
 import java.io.IOException;
+import java.util.concurrent.TimeUnit;
 
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
@@ -16,15 +17,17 @@ public class TC_LoginDDT_002 extends BaseClass{
 	{
 		driver.get(BaseUrl);
 		LoginPage lp = new LoginPage(driver);
-		Thread.sleep(3000);
+		driver.manage().timeouts().implicitlyWait(3000, TimeUnit.MILLISECONDS);
+		
+	
 		lp.OpenMenu();
-		Thread.sleep(3000);
+		
 		lp.ClickOnLogoutButton();
-		Thread.sleep(3000);
+		
 		lp.setUserName(user);
 		lp.setPassword(pwd);
 		lp.ClickOnLoginButton();
-		Thread.sleep(3000);
+	
 		
 		if(isErrorPresent()==true)
 		{
@@ -36,11 +39,8 @@ public class TC_LoginDDT_002 extends BaseClass{
 		else
 		{
 			Assert.assertTrue(true);
-			Thread.sleep(3000);
 			lp.OpenMenu();
-			Thread.sleep(3000);
 			lp.ClickOnLogoutButton();
-			Thread.sleep(3000);
 		}
 	}
 	
