@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>2/3/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Oct 10 19:32:37 IST 2020</td>
+<td>Started on:</td><td>Sat Oct 10 20:21:14 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>40 seconds (40054 ms)</td>
+<tr><td>Total time:</td><td>47 seconds (47947 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -82,8 +82,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;LAPTOP-P3PP6HUN&apos;, ip: &apos;192.168.0.103&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\Users\AYUSI\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49846}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: d9b4e11e7f22d754cde3904ea908c59e
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\Users\AYUSI\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51503}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 09b63b774d20ac138c3ca8ba4d0ceae0
 *** Element info: {Using=xpath, value=//button[text()=&apos;Open Menu&apos;]}
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -100,8 +100,8 @@ Session ID: d9b4e11e7f22d754cde3904ea908c59e
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at com.SauceDemo.TestCases.TC_LoginDDT_002.isErrorPresent(TC_LoginDDT_002.java:59)
-	at com.SauceDemo.TestCases.TC_LoginDDT_002.loginDDT(TC_LoginDDT_002.java:36)
+	at com.SauceDemo.PageObjects.LoginPage.OpenMenu(LoginPage.java:61)
+	at com.SauceDemo.TestCases.TC_LoginDDT_002.loginDDT(TC_LoginDDT_002.java:53)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -130,15 +130,15 @@ Session ID: d9b4e11e7f22d754cde3904ea908c59e
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1746458880", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1746458880'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[text()=&apos;Open Menu&apos;]&quot;}
+</pre></div><a href='#' onClick='toggleBox("stack-trace1287606099", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1287606099'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[text()=&apos;Open Menu&apos;]&quot;}
   (Session info: chrome=85.0.4183.121)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;LAPTOP-P3PP6HUN&apos;, ip: &apos;192.168.0.103&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\Users\AYUSI\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49846}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: d9b4e11e7f22d754cde3904ea908c59e
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\Users\AYUSI\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51503}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 09b63b774d20ac138c3ca8ba4d0ceae0
 *** Element info: {Using=xpath, value=//button[text()=&apos;Open Menu&apos;]}
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -155,8 +155,8 @@ Session ID: d9b4e11e7f22d754cde3904ea908c59e
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at com.SauceDemo.TestCases.TC_LoginDDT_002.isErrorPresent(TC_LoginDDT_002.java:59)
-	at com.SauceDemo.TestCases.TC_LoginDDT_002.loginDDT(TC_LoginDDT_002.java:36)
+	at com.SauceDemo.PageObjects.LoginPage.OpenMenu(LoginPage.java:61)
+	at com.SauceDemo.TestCases.TC_LoginDDT_002.loginDDT(TC_LoginDDT_002.java:53)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -196,8 +196,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;LAPTOP-P3PP6HUN&apos;, ip: &apos;192.168.0.103&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\Users\AYUSI\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49846}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: d9b4e11e7f22d754cde3904ea908c59e
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\Users\AYUSI\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51503}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 09b63b774d20ac138c3ca8ba4d0ceae0
 *** Element info: {Using=xpath, value=//button[text()=&apos;Open Menu&apos;]}
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -214,8 +214,8 @@ Session ID: d9b4e11e7f22d754cde3904ea908c59e
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at com.SauceDemo.TestCases.TC_LoginDDT_002.isErrorPresent(TC_LoginDDT_002.java:59)
-	at com.SauceDemo.TestCases.TC_LoginDDT_002.loginDDT(TC_LoginDDT_002.java:36)
+	at com.SauceDemo.PageObjects.LoginPage.OpenMenu(LoginPage.java:61)
+	at com.SauceDemo.TestCases.TC_LoginDDT_002.loginDDT(TC_LoginDDT_002.java:53)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -244,15 +244,15 @@ Session ID: d9b4e11e7f22d754cde3904ea908c59e
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace660915526", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace660915526'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[text()=&apos;Open Menu&apos;]&quot;}
+</pre></div><a href='#' onClick='toggleBox("stack-trace363616706", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace363616706'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[text()=&apos;Open Menu&apos;]&quot;}
   (Session info: chrome=85.0.4183.121)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;LAPTOP-P3PP6HUN&apos;, ip: &apos;192.168.0.103&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\Users\AYUSI\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49846}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: d9b4e11e7f22d754cde3904ea908c59e
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\Users\AYUSI\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51503}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 09b63b774d20ac138c3ca8ba4d0ceae0
 *** Element info: {Using=xpath, value=//button[text()=&apos;Open Menu&apos;]}
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -269,8 +269,8 @@ Session ID: d9b4e11e7f22d754cde3904ea908c59e
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at com.SauceDemo.TestCases.TC_LoginDDT_002.isErrorPresent(TC_LoginDDT_002.java:59)
-	at com.SauceDemo.TestCases.TC_LoginDDT_002.loginDDT(TC_LoginDDT_002.java:36)
+	at com.SauceDemo.PageObjects.LoginPage.OpenMenu(LoginPage.java:61)
+	at com.SauceDemo.TestCases.TC_LoginDDT_002.loginDDT(TC_LoginDDT_002.java:53)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -310,8 +310,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;LAPTOP-P3PP6HUN&apos;, ip: &apos;192.168.0.103&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\Users\AYUSI\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49846}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: d9b4e11e7f22d754cde3904ea908c59e
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\Users\AYUSI\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51503}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 09b63b774d20ac138c3ca8ba4d0ceae0
 *** Element info: {Using=xpath, value=//button[text()=&apos;Open Menu&apos;]}
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -328,8 +328,8 @@ Session ID: d9b4e11e7f22d754cde3904ea908c59e
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at com.SauceDemo.TestCases.TC_LoginDDT_002.isErrorPresent(TC_LoginDDT_002.java:59)
-	at com.SauceDemo.TestCases.TC_LoginDDT_002.loginDDT(TC_LoginDDT_002.java:36)
+	at com.SauceDemo.PageObjects.LoginPage.OpenMenu(LoginPage.java:61)
+	at com.SauceDemo.TestCases.TC_LoginDDT_002.loginDDT(TC_LoginDDT_002.java:53)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -358,15 +358,15 @@ Session ID: d9b4e11e7f22d754cde3904ea908c59e
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1894287849", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1894287849'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[text()=&apos;Open Menu&apos;]&quot;}
+</pre></div><a href='#' onClick='toggleBox("stack-trace1881218633", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1881218633'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[text()=&apos;Open Menu&apos;]&quot;}
   (Session info: chrome=85.0.4183.121)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;LAPTOP-P3PP6HUN&apos;, ip: &apos;192.168.0.103&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\Users\AYUSI\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49846}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: d9b4e11e7f22d754cde3904ea908c59e
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\Users\AYUSI\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51503}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 09b63b774d20ac138c3ca8ba4d0ceae0
 *** Element info: {Using=xpath, value=//button[text()=&apos;Open Menu&apos;]}
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -383,8 +383,8 @@ Session ID: d9b4e11e7f22d754cde3904ea908c59e
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at com.SauceDemo.TestCases.TC_LoginDDT_002.isErrorPresent(TC_LoginDDT_002.java:59)
-	at com.SauceDemo.TestCases.TC_LoginDDT_002.loginDDT(TC_LoginDDT_002.java:36)
+	at com.SauceDemo.PageObjects.LoginPage.OpenMenu(LoginPage.java:61)
+	at com.SauceDemo.TestCases.TC_LoginDDT_002.loginDDT(TC_LoginDDT_002.java:53)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -427,12 +427,12 @@ Session ID: d9b4e11e7f22d754cde3904ea908c59e
 <tr>
 <td title='com.SauceDemo.TestCases.TC_LoginDDT_002.loginDDT()'><b>loginDDT</b><br>Test class: com.SauceDemo.TestCases.TC_LoginDDT_002<br>Parameters: standard_user, secret_sauce</td>
 <td></td>
-<td>2</td>
+<td>7</td>
 <td>com.SauceDemo.TestCases.TC_LoginDDT_002@5dd6264</td></tr>
 <tr>
 <td title='com.SauceDemo.TestCases.TC_LoginDDT_002.loginDDT()'><b>loginDDT</b><br>Test class: com.SauceDemo.TestCases.TC_LoginDDT_002<br>Parameters: performance_glitch_user, secret_sauce</td>
 <td></td>
-<td>5</td>
+<td>11</td>
 <td>com.SauceDemo.TestCases.TC_LoginDDT_002@5dd6264</td></tr>
 </table><p>
 </body>

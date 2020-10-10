@@ -1,5 +1,9 @@
 package com.SauceDemo.TestCases;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
@@ -33,15 +37,18 @@ public class TC_LoginDDT_002 extends BaseClass{
 		lp.ClickOnLoginButton();
 	
 		
-		if(isErrorPresent()==false)
+		
+		
+
+		if(isErrorPresent()==true)
 		{
-			//Assert.assertTrue(false);
+			Assert.assertTrue(false);
 			
 			logger.warn("Login failed");
 		}
-		if(isErrorPresent()==true)
+		if(isErrorPresent()==false)
 		{
-			//Assert.assertTrue(true);
+			Assert.assertTrue(true);
 			logger.info("Login passed");
 			lp.OpenMenu();
 			lp.ClickOnLogoutButton();
@@ -51,18 +58,18 @@ public class TC_LoginDDT_002 extends BaseClass{
 	
 	public boolean isErrorPresent()
 	{
-		//LoginPage lp = new LoginPage(driver);
-		//try
-		//{
-			//String ab = lp.CaptureError();
-			//Assert.assertEquals(ab, "Epic sadface: Username and password do not match any user in this service");
-		return	driver.findElement(By.xpath("//button[text()='Open Menu']")).isDisplayed();
+		LoginPage lp = new LoginPage(driver);
+		try
+		{
+			String ab = lp.CaptureError();
+			Assert.assertEquals(ab, "Epic sadface: ");
+		return true;
 			
-		//}
-		//catch(Exception e)
-		//{
-		//	return false;
-		//}
+		}
+		catch(Exception e)
+		{
+			return false;
+		}
 	}
 	
 	
