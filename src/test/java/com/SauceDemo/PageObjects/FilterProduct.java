@@ -6,6 +6,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
+import com.SauceDemo.Utilities.ExcelWrite;
+
 public class FilterProduct {
 	
 	WebDriver driver;
@@ -40,8 +42,8 @@ public class FilterProduct {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("window.scrollBy(0,2000)", "");
 	
-        System.out.println(driver.findElement(FirstProduct).getText());
-        System.out.println(driver.findElement(FirstProductPrice).getText());
+        ExcelWrite.ProductName((driver.findElement(FirstProduct).getText()));
+        ExcelWrite.ProductPrice((driver.findElement(FirstProductPrice).getText()));
 	}
 
 }

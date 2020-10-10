@@ -5,6 +5,8 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
+import com.SauceDemo.Utilities.ExcelWrite;
+
 public class CheckOut {
 	
 	WebDriver driver;
@@ -51,7 +53,7 @@ public class CheckOut {
 	
 	public void getShippingInfo()
 	{
-		System.out.println(driver.findElement(ShippingInfo).getText());
+		ExcelWrite.Shipinfo((driver.findElement(ShippingInfo).getText()));
 	}
 	
 	public void ClickOnFinishButton()
