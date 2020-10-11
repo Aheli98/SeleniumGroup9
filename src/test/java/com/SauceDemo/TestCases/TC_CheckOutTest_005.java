@@ -22,30 +22,42 @@ public class TC_CheckOutTest_005 extends BaseClass{
 		logger = extent.createTest("Checkout");
 		
 		driver.manage().window().maximize();
+		log.info("URL is opened");
+
+		LoginPage lp = new LoginPage(driver);
 		
 		driver.manage().timeouts().implicitlyWait(3000, TimeUnit.MILLISECONDS);
 		
-		LoginPage lp = new LoginPage(driver);
-		
 		lp.OpenMenu();
 		logger.log(Status.INFO, "Clicked navMenu");
-		
+	
 		lp.ClickOnLogoutButton();
-		logger.log(Status.INFO, "Clicked on Logout");		
+		logger.log(Status.INFO, "Clicked on Logout");	
+		//driver.manage().timeouts().implicitlyWait(5000, TimeUnit.MILLISECONDS);
+
 		lp.setUserName(UserName);
 		logger.log(Status.INFO, "UserName entered");
+		log.info("Entered username");
+
 		lp.setPassword(Password);
 		logger.log(Status.INFO, "Password entered");
-		
+		log.info("Entered password");
+
 		lp.ClickOnLoginButton();
-		
-		
+		logger.log(Status.INFO, "Clicked On login button");
+	
 		FilterProduct fp = new FilterProduct(driver);
+
 		fp.FilteringProduct();
-		
+		logger.log(Status.INFO, "filtered");
+		log.info("Product filtered");
+
 		fp.SelectFirstProduct();
-		
+		logger.log(Status.INFO, "First product selected");
+		log.info("First product selected");
+
 		AddToCart atc = new AddToCart(driver);
+
 		atc.ClickOnAddtocartButton();
 		atc.ClickOnCartIcon();
 		
@@ -54,6 +66,7 @@ public class TC_CheckOutTest_005 extends BaseClass{
 		chk.ClickOnCheckOutBox();
 		logger.log(Status.INFO, "Clicked On checkout");
 		
+		log.info("Filling checkout details.........");
 		chk.setFirstName(FirstName);
 		logger.log(Status.INFO, "First Name Entered");
 		
@@ -79,7 +92,9 @@ public class TC_CheckOutTest_005 extends BaseClass{
 		String head = chk.getHeader();
 		Assert.assertEquals(head, "THANK YOU FOR YOUR ORDER");
 		logger.log(Status.PASS, "Test Case checkout is passed");
-		
+		log.info("Shipping info written in the excelsheet");
+		log.info("Test Case checkout is passed");
+
 		
 		
 	}

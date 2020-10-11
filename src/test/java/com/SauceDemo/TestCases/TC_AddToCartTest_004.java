@@ -24,9 +24,9 @@ public class TC_AddToCartTest_004 extends BaseClass {
 	{    
 		logger = extent.createTest("Add to Cart");
 		driver.manage().window().maximize();
+		log.info("URL is opened");
+
 		LoginPage lp = new LoginPage(driver);
-		FilterProduct fp = new FilterProduct(driver);
-		AddToCart atc = new AddToCart(driver);
 		
 		driver.manage().timeouts().implicitlyWait(3000, TimeUnit.MILLISECONDS);
 		
@@ -35,32 +35,40 @@ public class TC_AddToCartTest_004 extends BaseClass {
 	
 		lp.ClickOnLogoutButton();
 		logger.log(Status.INFO, "Clicked on Logout");	
+		//driver.manage().timeouts().implicitlyWait(5000, TimeUnit.MILLISECONDS);
+
 		lp.setUserName(UserName);
 		logger.log(Status.INFO, "UserName entered");
-		
+		log.info("Entered username");
+
 		lp.setPassword(Password);
 		logger.log(Status.INFO, "Password entered");
-		
+		log.info("Entered password");
+
 		lp.ClickOnLoginButton();
 		logger.log(Status.INFO, "Clicked On login button");
 	
+		FilterProduct fp = new FilterProduct(driver);
+
 		fp.FilteringProduct();
 		logger.log(Status.INFO, "filtered");
+		log.info("Product filtered");
 
 		fp.SelectFirstProduct();
-		
-		
+		logger.log(Status.INFO, "First product selected");
+		log.info("First product selected");
+
+		AddToCart atc = new AddToCart(driver);
+
 		atc.ClickOnAddtocartButton();
 		atc.ClickOnCartIcon();
 		logger.log(Status.PASS, "Added to Cart");
-	
+		log.info("Product added to cart");
+		log.info("Adding to cart testcase passed");
+
 		
 	}
-	@AfterTest
-	public void EndTest()
-	{
-		extent.flush();
-	}
+	
 	
 
 }

@@ -3,14 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.SauceDemo.TestCases.TC_LoginDDT_002">
+      <class name="com.SauceDemo.TestCases.TC_FilterProductTest_003">
         <methods>
+          <include name="startTest"/>
           <include name="closebrowser"/>
           <include name="screenShot"/>
-          <include name="loginDDT" invocation-numbers="1 2 3"/>
           <include name="setup"/>
+          <include name="productfiltering"/>
+          <include name="EndTest"/>
         </methods>
-      </class> <!-- com.SauceDemo.TestCases.TC_LoginDDT_002 -->
+      </class> <!-- com.SauceDemo.TestCases.TC_FilterProductTest_003 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

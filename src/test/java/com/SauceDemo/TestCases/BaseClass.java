@@ -8,8 +8,8 @@ import java.util.Calendar;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
-//import org.apache.log4j.Logger;
-//import org.apache.log4j.PropertyConfigurator;
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.ITestResult;
@@ -36,6 +36,8 @@ public class BaseClass {
 	public static ExtentReports extent;
 	public static ExtentHtmlReporter htmlReporter;
 	public static ExtentTest logger;
+	public static Logger log;
+
 	
 	
 	ConfigPropertiesRead readconfig = new ConfigPropertiesRead();
@@ -73,12 +75,12 @@ public class BaseClass {
 		String driverName = readconfig.getBrowser();
 		if(driverName.equalsIgnoreCase("chrome"))
 		{
-			System.setProperty("webdriver.chrome.driver", ".\\Drivers\\chromedriver1.exe");
+			System.setProperty("webdriver.chrome.driver", ".\\Drivers\\chromedriver.exe");
 			//object instantiation
 			driver = new ChromeDriver();
 		
-			//logger = Logger.getLogger("SauceDemo");
-			//PropertyConfigurator.configure("log4j.properties");
+			log = Logger.getLogger("SauceDemo");
+			PropertyConfigurator.configure("log4j.properties");
 		}
 		driver.get(BaseUrl);
 	}

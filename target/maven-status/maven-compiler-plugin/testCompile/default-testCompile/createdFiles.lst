@@ -3,10 +3,10 @@ com\SauceDemo\TestCases\TC_LoginTest_001.class
 com\SauceDemo\TestCases\TC_FilterProductTest_003.class
 com\SauceDemo\Utilities\ConfigPropertiesRead.class
 com\SauceDemo\PageObjects\LoginPage.class
-com\SauceDemo\TestCases\TC_CheckOutTest_005.class
-com\SauceDemo\TestCases\TC_AddToCartTest_004.class
 com\SauceDemo\TestCases\BaseClass.class
 com\SauceDemo\PageObjects\AddToCart.class
+com\SauceDemo\Utilities\XLUtils.class
+com\SauceDemo\TestCases\TC_CheckOutTest_005.class
+com\SauceDemo\TestCases\TC_AddToCartTest_004.class
 com\SauceDemo\PageObjects\CheckOut.class
 com\SauceDemo\TestCases\TC_LoginDDT_002.class
-com\SauceDemo\Utilities\XLUtils.class
