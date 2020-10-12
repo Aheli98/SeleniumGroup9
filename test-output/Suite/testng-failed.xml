@@ -5,10 +5,12 @@
     <classes>
       <class name="com.SauceDemo.TestCases.TC_LoginDDT_002">
         <methods>
+          <include name="startTest"/>
           <include name="closebrowser"/>
           <include name="screenShot"/>
           <include name="loginDDT" invocation-numbers="1 2 3"/>
           <include name="setup"/>
+          <include name="EndTest"/>
         </methods>
       </class> <!-- com.SauceDemo.TestCases.TC_LoginDDT_002 -->
     </classes>

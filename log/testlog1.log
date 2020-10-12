@@ -454,3 +454,133 @@
 2020-10-11 23:06:27,806 [main] INFO SauceDemo - Filling checkout details.........
 2020-10-11 23:06:28,533 [main] INFO SauceDemo - Shipping info written in the excelsheet
 2020-10-11 23:06:28,534 [main] INFO SauceDemo - Test Case checkout is passed
+2020-10-12 18:18:06,631 [main] INFO SauceDemo - URL is opened
+2020-10-12 18:18:13,764 [main] INFO SauceDemo - Entered username
+2020-10-12 18:18:14,002 [main] INFO SauceDemo - Entered password
+2020-10-12 18:18:15,916 [main] INFO SauceDemo - Login test passed
+2020-10-12 18:19:47,832 [main] INFO SauceDemo - URL is opened
+2020-10-12 18:19:55,514 [main] INFO SauceDemo - Entered username
+2020-10-12 18:19:55,555 [main] INFO SauceDemo - Entered password
+2020-10-12 18:19:59,832 [main] INFO SauceDemo - Login test passed
+2020-10-12 18:24:44,978 [main] INFO SauceDemo - URL is opened
+2020-10-12 18:24:45,803 [main] INFO SauceDemo - Entered username
+2020-10-12 18:24:45,851 [main] INFO SauceDemo - Entered password
+2020-10-12 18:24:51,563 [main] INFO SauceDemo - Login test passed
+2020-10-12 18:24:52,135 [main] INFO SauceDemo - URL is opened
+2020-10-12 18:24:52,619 [main] INFO SauceDemo - Entered username
+2020-10-12 18:24:52,659 [main] INFO SauceDemo - Entered password
+2020-10-12 18:24:56,207 [main] INFO SauceDemo - URL is opened
+2020-10-12 18:24:56,622 [main] INFO SauceDemo - Entered username
+2020-10-12 18:24:56,656 [main] INFO SauceDemo - Entered password
+2020-10-12 18:25:00,184 [main] INFO SauceDemo - URL is opened
+2020-10-12 18:25:00,619 [main] INFO SauceDemo - Entered username
+2020-10-12 18:25:00,652 [main] INFO SauceDemo - Entered password
+2020-10-12 18:25:04,083 [main] INFO SauceDemo - URL is opened
+2020-10-12 18:25:04,498 [main] INFO SauceDemo - Entered username
+2020-10-12 18:25:04,529 [main] INFO SauceDemo - Entered password
+2020-10-12 18:25:13,161 [main] INFO SauceDemo - Login test passed
+2020-10-12 18:25:56,633 [main] INFO SauceDemo - URL is opened
+2020-10-12 18:25:57,606 [main] INFO SauceDemo - Entered username
+2020-10-12 18:25:57,877 [main] INFO SauceDemo - Entered password
+2020-10-12 18:25:59,335 [main] INFO SauceDemo - Product filtered successfully
+2020-10-12 18:26:01,239 [main] INFO SauceDemo - Name and Price of first product written in Excel sheet
+2020-10-12 18:26:01,240 [main] INFO SauceDemo - Filtering testcase passed
+2020-10-12 18:26:25,611 [main] INFO SauceDemo - URL is opened
+2020-10-12 18:26:26,376 [main] INFO SauceDemo - Entered username
+2020-10-12 18:26:26,447 [main] INFO SauceDemo - Entered password
+2020-10-12 18:26:27,712 [main] INFO SauceDemo - Product filtered
+2020-10-12 18:26:29,040 [main] INFO SauceDemo - First product selected
+2020-10-12 18:26:30,137 [main] INFO SauceDemo - Filling checkout details.........
+2020-10-12 18:26:31,659 [main] INFO SauceDemo - Shipping info written in the excelsheet
+2020-10-12 18:26:31,660 [main] INFO SauceDemo - Test Case checkout is passed
+2020-10-12 19:43:27,116 [main] INFO SauceDemo - URL is opened
+2020-10-12 19:43:29,218 [main] INFO SauceDemo - Entered username
+2020-10-12 19:43:29,532 [main] INFO SauceDemo - Entered password
+2020-10-12 19:43:33,548 [main] INFO SauceDemo - Product filtered
+2020-10-12 19:43:37,076 [main] INFO SauceDemo - First product selected
+2020-10-12 19:43:37,757 [main] INFO SauceDemo - Product added to cart
+2020-10-12 19:43:37,908 [main] INFO SauceDemo - Test Case continue shopping is passed
+2020-10-12 19:45:09,877 [main] INFO SauceDemo - URL is opened
+2020-10-12 19:45:10,809 [main] INFO SauceDemo - Entered username
+2020-10-12 19:45:10,855 [main] INFO SauceDemo - Entered password
+2020-10-12 19:45:12,316 [main] INFO SauceDemo - Product filtered
+2020-10-12 19:45:14,447 [main] INFO SauceDemo - First product selected
+2020-10-12 19:45:14,771 [main] INFO SauceDemo - Product added to cart
+2020-10-12 19:45:14,903 [main] INFO SauceDemo - Test Case continue shopping is passed
+2020-10-12 19:53:21,539 [main] INFO SauceDemo - URL is opened
+2020-10-12 19:53:24,377 [main] INFO SauceDemo - Entered username
+2020-10-12 19:53:24,499 [main] INFO SauceDemo - Entered password
+2020-10-12 19:53:27,508 [main] INFO SauceDemo - Product filtered
+2020-10-12 19:53:29,729 [main] INFO SauceDemo - First product selected
+2020-10-12 19:53:30,233 [main] INFO SauceDemo - Filling checkout details.........
+2020-10-12 19:53:30,580 [main] INFO SauceDemo - Test Case cancel is passed
+2020-10-12 20:02:57,897 [main] INFO SauceDemo - URL is opened
+2020-10-12 20:03:00,283 [main] INFO SauceDemo - Entered username
+2020-10-12 20:03:00,623 [main] INFO SauceDemo - Entered password
+2020-10-12 20:03:03,133 [main] INFO SauceDemo - Product filtered
+2020-10-12 20:03:07,066 [main] INFO SauceDemo - First product selected
+2020-10-12 20:03:07,681 [main] INFO SauceDemo - Filling checkout details.........
+2020-10-12 20:03:08,139 [main] INFO SauceDemo - Test Case cancel is passed
+2020-10-12 20:16:08,667 [main] INFO SauceDemo - URL is opened
+2020-10-12 20:16:14,995 [main] INFO SauceDemo - Entered username
+2020-10-12 20:16:15,031 [main] INFO SauceDemo - Entered password
+2020-10-12 20:16:18,912 [main] INFO SauceDemo - Product filtered
+2020-10-12 20:16:21,967 [main] INFO SauceDemo - First product selected
+2020-10-12 20:16:22,810 [main] INFO SauceDemo - Filling checkout details.........
+2020-10-12 20:16:23,247 [main] INFO SauceDemo - Test Case cancel is passed
+2020-10-12 20:22:47,464 [main] INFO SauceDemo - URL is opened
+2020-10-12 20:22:50,072 [main] INFO SauceDemo - Entered username
+2020-10-12 20:22:50,194 [main] INFO SauceDemo - Entered password
+2020-10-12 20:22:51,878 [main] INFO SauceDemo - Login test passed
+2020-10-12 20:23:36,188 [main] INFO SauceDemo - URL is opened
+2020-10-12 20:23:40,119 [main] INFO SauceDemo - Entered username
+2020-10-12 20:23:40,266 [main] INFO SauceDemo - Entered password
+2020-10-12 20:23:45,817 [main] INFO SauceDemo - Login test passed
+2020-10-12 20:23:46,461 [main] INFO SauceDemo - URL is opened
+2020-10-12 20:23:46,988 [main] INFO SauceDemo - Entered username
+2020-10-12 20:23:47,128 [main] INFO SauceDemo - Entered password
+2020-10-12 20:23:50,769 [main] INFO SauceDemo - URL is opened
+2020-10-12 20:23:51,239 [main] INFO SauceDemo - Entered username
+2020-10-12 20:23:51,280 [main] INFO SauceDemo - Entered password
+2020-10-12 20:23:55,190 [main] INFO SauceDemo - URL is opened
+2020-10-12 20:23:55,799 [main] INFO SauceDemo - Entered username
+2020-10-12 20:23:55,851 [main] INFO SauceDemo - Entered password
+2020-10-12 20:23:59,337 [main] INFO SauceDemo - URL is opened
+2020-10-12 20:23:59,833 [main] INFO SauceDemo - Entered username
+2020-10-12 20:23:59,873 [main] INFO SauceDemo - Entered password
+2020-10-12 20:24:08,561 [main] INFO SauceDemo - Login test passed
+2020-10-12 20:24:45,785 [main] INFO SauceDemo - URL is opened
+2020-10-12 20:24:47,774 [main] INFO SauceDemo - Entered username
+2020-10-12 20:24:48,679 [main] INFO SauceDemo - Entered password
+2020-10-12 20:24:52,736 [main] INFO SauceDemo - Product filtered successfully
+2020-10-12 20:24:55,137 [main] INFO SauceDemo - Name and Price of first product written in Excel sheet
+2020-10-12 20:24:55,139 [main] INFO SauceDemo - Filtering testcase passed
+2020-10-12 20:25:14,840 [main] INFO SauceDemo - URL is opened
+2020-10-12 20:25:15,992 [main] INFO SauceDemo - Entered username
+2020-10-12 20:25:16,047 [main] INFO SauceDemo - Entered password
+2020-10-12 20:25:18,211 [main] INFO SauceDemo - Product filtered
+2020-10-12 20:25:19,352 [main] INFO SauceDemo - First product selected
+2020-10-12 20:25:20,237 [main] INFO SauceDemo - Product added to cart
+2020-10-12 20:25:20,238 [main] INFO SauceDemo - Adding to cart testcase passed
+2020-10-12 20:25:37,266 [main] INFO SauceDemo - URL is opened
+2020-10-12 20:25:38,150 [main] INFO SauceDemo - Entered username
+2020-10-12 20:25:38,203 [main] INFO SauceDemo - Entered password
+2020-10-12 20:25:40,061 [main] INFO SauceDemo - Product filtered
+2020-10-12 20:25:40,748 [main] INFO SauceDemo - First product selected
+2020-10-12 20:25:41,623 [main] INFO SauceDemo - Filling checkout details.........
+2020-10-12 20:25:43,434 [main] INFO SauceDemo - Shipping info written in the excelsheet
+2020-10-12 20:25:43,435 [main] INFO SauceDemo - Test Case checkout is passed
+2020-10-12 20:26:01,712 [main] INFO SauceDemo - URL is opened
+2020-10-12 20:26:02,227 [main] INFO SauceDemo - Entered username
+2020-10-12 20:26:03,061 [main] INFO SauceDemo - Entered password
+2020-10-12 20:26:05,290 [main] INFO SauceDemo - Product filtered
+2020-10-12 20:26:05,761 [main] INFO SauceDemo - First product selected
+2020-10-12 20:26:06,409 [main] INFO SauceDemo - Product added to cart
+2020-10-12 20:26:07,252 [main] INFO SauceDemo - Test Case continue shopping is passed
+2020-10-12 20:26:33,296 [main] INFO SauceDemo - URL is opened
+2020-10-12 20:26:34,441 [main] INFO SauceDemo - Entered username
+2020-10-12 20:26:34,491 [main] INFO SauceDemo - Entered password
+2020-10-12 20:26:36,628 [main] INFO SauceDemo - Product filtered
+2020-10-12 20:26:37,293 [main] INFO SauceDemo - First product selected
+2020-10-12 20:26:38,191 [main] INFO SauceDemo - Filling checkout details.........
+2020-10-12 20:26:38,545 [main] INFO SauceDemo - Test Case cancel is passed
