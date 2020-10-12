@@ -35,7 +35,6 @@ public class CheckOutCancelContinue {
 	public String getSubHeader()
 	{
 		return driver.findElement(Subheader).getText();
-		
 	}
 
 }

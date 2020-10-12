@@ -584,3 +584,17 @@
 2020-10-12 20:26:37,293 - SauceDemo -INFO - First product selected
 2020-10-12 20:26:38,191 - SauceDemo -INFO - Filling checkout details.........
 2020-10-12 20:26:38,545 - SauceDemo -INFO - Test Case cancel is passed
+2020-10-12 22:17:10,055 - SauceDemo -INFO - URL is opened
+2020-10-12 22:17:12,742 - SauceDemo -INFO - Entered username
+2020-10-12 22:17:12,810 - SauceDemo -INFO - Entered password
+2020-10-12 22:17:16,867 - SauceDemo -INFO - Product filtered
+2020-10-12 22:17:19,902 - SauceDemo -INFO - First product selected
+2020-10-12 22:17:21,038 - SauceDemo -INFO - Filling checkout details.........
+2020-10-12 22:17:21,613 - SauceDemo -INFO - Test Case cancel is passed
+2020-10-12 22:17:51,847 - SauceDemo -INFO - URL is opened
+2020-10-12 22:17:56,652 - SauceDemo -INFO - Entered username
+2020-10-12 22:17:56,726 - SauceDemo -INFO - Entered password
+2020-10-12 22:18:00,541 - SauceDemo -INFO - Product filtered
+2020-10-12 22:18:03,337 - SauceDemo -INFO - First product selected
+2020-10-12 22:18:03,739 - SauceDemo -INFO - Product added to cart
+2020-10-12 22:18:03,919 - SauceDemo -INFO - Test Case continue shopping is passed
