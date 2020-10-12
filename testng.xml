@@ -8,6 +8,9 @@
         <class name="com.SauceDemo.TestCases.TC_FilterProductTest_003"/> 
         <class name="com.SauceDemo.TestCases.TC_AddToCartTest_004"/> 
 		<class name="com.SauceDemo.TestCases.TC_CheckOutTest_005"/>
+		<class name="com.SauceDemo.TestCases.TC_ContinueShopping_006"/>
+		<class name="com.SauceDemo.TestCases.TC_Cancel_007"/>
+		
 
     </classes>
   </test> <!-- Test -->
